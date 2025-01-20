@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editor Crepe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        /* Target the editor container */
+        #app .milkdown .ProseMirror {
+            padding: 0 50px;
+
+        }
+    </style>
+    <link href="./styles.css" rel="stylesheet">
+<!--    how to do theme is import the style.css and base theme
+@import "../_internal/classic-common.css"; as is and then copy the theme file
+ eg: frame-dark.css and apply it selectively to a class-->
+    <link rel="stylesheet" href="@milkdown/crepe/theme/common/style.css" />
+    <link rel="stylesheet" href="@milkdown/crepe/theme/frame-dark.css" />
+</head>
+<body>
+<div id="app"></div>
+<script type="module" src="./main.js"></script>
+</body>
+</html>
